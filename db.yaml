@@ -1,0 +1,90 @@
+---
+  description: "decentOS database schema."
+  version: "0.0.1"
+  users: 
+    - 
+      username: "yunorelational"
+      cipherpass: "$6$EBefRbO$Cber.ex62eref..WbVnESEREk.76EDA"
+      comms: 
+        - 
+          pref: "email"
+          address: "foo@example.com"
+          priority: 0
+        - 
+          pref: "email"
+          address: "bar@example.com"
+          priority: 1
+        - 
+          pref: "slack"
+          baseurl: "https://decentraldao.slack.com"
+          id: "awickedusername"
+          priority: 2
+      fob: 
+        id: 123
+        issuedat: 14074614497
+        issuer: "adminbot"
+      landevices: 
+        - 
+          name: "samsung galaxy S1"
+          mac: "E4:12:34:56:78:AB"
+          lastseen: 1407942092
+        - 
+          name: "Toshiba junk-book"
+          mac: "B2:12:6A:59:EA:77"
+          lastseen: 1457242312
+      notes: 
+        - 
+          author: "salesguy6"
+          timestamp: 1457242312
+          body: "Lives in Surrey. He knows everybody in the shower curtain ring industry."
+  invoices: 
+    - 
+      type: "dues"
+      addr: "1bE4teC2r7R84F7rj5eDXrZbQOA"
+      status: "unpaid"
+      timestamp: 1457242312
+      localamt: 175.77
+      lastvalued: 167.22
+  balance: 
+    localamt: 22.76
+    btcamt: 1621714
+    lastcalc: 1457242312
+  products: 
+    - 
+      type: "membeship"
+      value: 
+        currency: "CAD"
+        value: "75"
+      frequency: "monthly"
+  policies: 
+    - 
+      name: "underpay"
+      value: 0.03
+      desc: "How much can a digital payment be under our invoice amount before manual review."
+    - 
+      name: "overdue_cutoff"
+      value: "function() { foo; bar; x+3 }"
+      desc: "How to calculate when to cut access to members who are overdue."
+  txs: 
+    - 
+      type: "XBT"
+      localval: 212.12
+      confs: 2142
+      timestamp: 1457242312
+      txid: "eb2ab4612c1be49ec2e7e8427765eda35b"
+      notes: 
+        - 
+          author: "1337accountant"
+          timestamp: 1457242312
+          body: "Ihavenoideawhatthismoneyisfor"
+    - 
+      type: "Interac"
+      rcvAccount: "23494194"
+      localval: 212.12
+      timestamp: 1457242312
+      notes: 
+        - 
+          author: "1337accountant"
+          timestamp: 1457242312
+          body: "This will be the one that gets us in the end."
+
